@@ -1,0 +1,44 @@
+.dropdown-menu{
+    left:-70px;
+}
+.login-title{
+    font-family: "Work Sans", Arial, sans-serif;
+}
+h1,h2,h3{
+    text-align: center;
+}
+a.disabled {
+    pointer-events: none;
+    cursor: not-allowed ;
+    color:red
+}
+th,td,.icon{
+    text-align:center;
+}
+a.disabled {
+    pointer-events: none;
+    cursor: no-drop;
+}
+.circle{
+    height: 250px;
+    width: 250px;
+    /* background-color: #bbb; */
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.oi{
+    margin:auto;
+    width:100px
+}
+.imagem-cortada{
+    object-fit: cover;
+    object-position: 0% 40%;
+    width: auto;
+    height: 600px;
+    max-height: 600px;
+}
+.caption{
+    background: rgba(0, 0, 0, 0.35);
+}

@@ -1,0 +1,27 @@
+1) Exibir painel de administrador somente para administradores
+Arquivo(linha): userpages.php(148);php/login.php(48)
+Foi criada uma nova variavel para a sessão do usuário logado que armazena a informação que ele é um administrador ou não(linha 48 do arquivo login.php). A variável é checada através de um if em na linha 148 do "userpages.php", caso "admin=1" o painel vai ser exibido.
+
+2) Criação do arquivo addquestions
+Arquivo: addquestions.php
+Foi criado o arquivo da página em que serão inseridas as perguntas e suas respectivas respostas através de um form(linhas 126-180) e, anteriormente, será realizada efetivamente a inserção do quiz cadastrado na página anterior, a "userpages.php"(linha 9). O processo de cadastro de quizes é o padrão, verifica se todos os campos foram preenchidos (se não, uma variavel "$erro" será responsável por fazer com que o resto do conteúdo da página não seja exibido), recebe as informações preenchidas pelo usuário (informações passadas através do form da página "userpage.php" nas linha 171-207), se não há nenhum quiz com esse nome já cadastrado (addquestions.php linhas 22-27), etc. No arquivo, o form citado anteriormente (das linhas 126-180) tem como action o arquivo "novapergunta.php" (linha 126), ou seja, ao apertarmos o botão de submissão das informações, as informações digitadas nos campos vai para esse outro novo arquivo para serem trabalhadas. Além disso, esse form também tem um input escondido, do tipo hidden, (nas linha 178) que vai servir para passarmos o nome do quiz ao qual estamos adicionando as perguntas para posteriormentes pegarmos seu ID.
+
+3) Criação do arquivo novapergunta
+Arquivo: novapergunta.php
+Esse arquivo é bem mais simples, em seu html só temos um form (52-55) que contém um botão do tipo submit e um outro input hidden também para devolvermos o nome do quiz. Em suma, ao apertar esse botão a página "action" do formulário, nesse caso a página "addquestions.php", será carregada e receberá o nome do quiz onde estão sendo inseridas as perguntas e a informação que o botão de nova pergunta foi acionado (vou explicar no ponto 4 como foi feita a gambiarra pra voltar a página anterior, no caso, a addquestions). No php dessa página, são realizadas efetivamente a inserção da pergunta e sua respectivas respostas e alternativas inseridas no formulário da página anterior. O processo de inserção é bastante similar a todos os outros que fizemos, verifica se todos s campos foram preenchidos(10-11) e inicia o processo de inserção:
+I)Recupera o nome do quiz que foi passado pelo input hidden na página addquestions para poder pegar seu ID (13-16)
+II)Recupera todas as outras informações inseridas no form(18-25)
+III)Insere a pergunta no banco de dados(27-28)
+IV)Pega o ID dessa mesma pergunta recém criada pra poder associar a sua respectiva resposta a ela (30-32)
+V)Finaliza o processo inserindo a resposta no banco de dados(34-36)
+
+4) Gambiarra na página addquestions
+Arquivo: addquestions.php
+Na linha 9 do arquivo tem um if que verifica se o botão de cadastro de quiz foi apertado OU(||) o botão de nova pergunta foi pressionado(no caso o botão seria o 'perguntajaadicionada' presente na linha 53 do "novapergunta.php"). Temos 2 situações que podem ocorrer:
+I) O usuário acabou de cadastrar o quiz e vai começar a inserir as perguntas, para isso, o programa entra no if da linha 12 do "addquestions" e realiza o processo descrito no passo 2)
+II) O usuário já cadastrou uma pergunta e quer cadastrar uma nova, para isso, clicou no botão "Nova pergunta" (de name='perguntajaadicionada'). Clicando nele, o sistema entra no if da linha 9 do addquestions mas não no da linha 12, entrando asim no else da 46. Dentro do else, só será definido que não houveram erros (47) e recuperado o nome do quiz (48). Por fim, toda a página será exibida e o processo se reinicia
+
+
+OBS: Lembrei disso agora mas não sei se já escrevi la em cima, de qualquer forma, essa variavel $erro que criei no addquestions vai controlar se o resto da pagina será exibido através de um if na linha 121
+
+OBS: Tentei destrinchar e explicar o máximo possível, qualquer duvida que tiver só mandar mensagem.
