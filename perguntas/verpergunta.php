@@ -144,7 +144,7 @@ $pergunta= ($conn->query($sql))->fetch_assoc();
             <input type='hidden' name='id' value='<?php echo($id);?>'>
 
         </form>
-        <center><a class="btn btn-success m-1" href='opcoesperguntas.php'>Voltar</a></center>
+        <center><a class="btn btn-success m-1" href='listaperguntas.php'>Voltar</a></center>
     </div>
 
     

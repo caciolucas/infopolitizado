@@ -70,7 +70,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
 	    <div class="container d-flex align-items-center">
-        <a class="navbar-brand" href="#">INFOPOLITIZADO!</a>
+        <a class="navbar-brand" href="index.php">INFOPOLITIZADO!</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
@@ -129,7 +129,7 @@
 	  </nav>
  <!-- END nav -->
  
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('http://www2.ifrn.edu.br/ifrn.png');" style="text-align:center" />
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('https://www.acreuna.com.br/wp-content/uploads/2012/09/quemsomos.png');" style="text-align:center" />
       <div class="overlay"></div>
 
       <div class="container">
@@ -146,8 +146,12 @@
         <div class="col-md-7 wrap-about py-2 pr-md-4 ftco-animate">	
 					<div class="services-2 d-flex">
 						<div class="text">
+						    	<h1 class="mb-4">EQUIPE DESENVOLVEDORA</h1>
 								<div class="text-justify">
-                      <p><b> Somos, respectivamente, Luana Beatriz Tavares Taurino, Jerlândia Eduarda de França Basílio e Roberta Elizamara Araújo de Medeiros, estudantes do Técnico Integrado em Informática do IFRN Campus Parnamirim e estamos cursando o 4° e ultimo ano do nosso Curso. </b></p>
+								    <p>A criação do portal INFOPOLITIZADO! - Propõe a união da importância e da capacidade de influência da juventude na política brasileira e da força que a informação somada à tecnologia tem de mudar um cenário político. O portal pretende apresentar informações sobre a participação histórica dos jovens na política do país, como uma ferramenta de informação destinada aos jovens e ao público em geral. Além de informações históricas e dados, o portal prevê a realização de quizzes para medir o conhecimento sobre os conteúdos apresentados.</p>
+                           <p>Somos, respectivamente,<a href="https://www.instagram.com/luanataurino/">Luana Beatriz Tavares Taurino</a>, <a href="https://www.instagram.com/jerlandiabasilio/">Jerlândia Eduarda de França Basílio</a> e <a href="https://www.instagram.com/elizamara__/">Roberta Elizamara Araújo de Medeiros</a>, concluintes do curso técnico integrado em informática pelo IFRN - Campus Parnamirim.</p>
+                           
+                            
                 <center>
                   <img src="https://scontent.frec10-1.fna.fbcdn.net/v/t1.0-9/76931192_2496041007302336_7904326291069861888_n.jpg?_nc_cat=105&_nc_ohc=64lfVWyEGxgAQmyKjF6bQ3I6RTYVfrydtMRS0krpUFWgc5IzFbICj16Jw&_nc_ht=scontent.frec10-1.fna&oh=b0de86dc749341f1976a6367573599a8&oe=5E4BF3DF" style="width:100%" align="center" >
                   </center> 
@@ -171,6 +175,12 @@
           	                  
           	                  
 	
+    <!-- FALE CONOSCO -->
+    	</div>
+    </section>
+    
+    
+		
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -182,51 +192,23 @@
 	                <li><span class="icon icon-map-marker"></span><span class="text">R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455</span></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">	infopolitizado@gmail.com</span></a></li>
 	              </ul>
-	              </ul>
 	            </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2">Recent Blog</h2>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
+              <h2 class="ftco-heading-2">Atalhos</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
+                <li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Voltar ao Inicio</a></li>
+                <li><a href="vargas.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Era Vargas</a></li>
+                <li><a href="temer.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Governo Michel Temer</a></li>
+                <li><a href="rousseff.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Governo Dilma Rousseff</a></li>
+                <li><a href="filme.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Filmes</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-		  <div class="ftco-footer-widget mb-5">
+            <div class="ftco-footer-widget mb-5">
             	<h2 class="ftco-heading-2">Fale conosco!</h2>
               	<form action="mailto.php">
 				  	<div class="input-group mb-3">
@@ -253,16 +235,21 @@
 					<center><button type="submit" class="btn btn-dark" name="cadastrar">Enviar</button></center>
               	</form>
             </div>
-          
+           
           </div>
         </div>
         <div class="row">
           <div class="col-md-12 text-center">
 
-       <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Desenvolvido por Jerlândia Basílio, Luana Taurino e Roberta Medeiros</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
- 
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
           </div>
         </div>
       </div>

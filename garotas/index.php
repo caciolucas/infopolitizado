@@ -120,6 +120,7 @@
                       <a class="dropdown-item" href="../musica.php">Músicas</a>
                     </div>
                 </li>
+                <li class="nav-item"><a href="quemsomos.php" class="nav-link">QUEM SOMOS?</a></li>
 	  
 	  
 	        	<li class="nav-item"><a href="../quizes.php" class="nav-link">QUIZ</a></li>
@@ -128,24 +129,14 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <!-- Carrossel -->
-    <section>
-        <div class="carousel-item">
-            <img src="https://www.altoastral.com.br/wp-content/uploads/2016/09/n%C3%ADsia-floresta-feminismo-brasil.jpg" alt="nisia1">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>Saiba mais sobre a história de <strong>Nísia Floresta Brasileira Augusta</strong> clicando <a href="nisia.php">AQUI</a> </h5>
-                <p>Nisia Floresta Brasileira Augusta</p>
-            </div>
-        </div>
-    </section>
-    <!-- Final do Carrossel -->
     <section class="hero-wrap hero-wrap-2" style="background-image: url('http://www.sindiedutec.org.br/disco/mulheres.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
              <h2 class="mb-2 bread">Personalidades femininas que fizeram história no cenário brasileiro. </h2>
-            <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Início<i class="ion-ios-arrow-forward"></i></a></span> 
+             <p class="breadcrumbs" style="color: #fff"><span class="mr-2"><a href="index.php"> Início <i class="ion-ios-arrow-forward"></i></a></span></i></span></p>
+          </div>
           </div>
         </div>
       </div>
@@ -171,6 +162,23 @@
 				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+					
 			</ol>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
@@ -205,7 +213,126 @@
 						<p>Saiba mais sobre a história de <strong>Princesa Isabel</strong> clicando <a href="princesaisabel.php">AQUI</a></p>
 					</div>
 				</div>
-				
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="http://3.bp.blogspot.com/-Qn7fXOpWjPs/Vqa3-uxKXNI/AAAAAAAAMb4/_OiT2ESMlU4/s1600/Daltro1.gif" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Leolinda Figueiredo Daltro</h4>
+						<h5 class='text-light'></h5>Fundou o primeiro partido feminino em 1910</h5>
+						<p>Saiba mais sobre a história de <strong>Leolinda Daltro</strong> clicando <a href="leolinda.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="http://mujeresconciencia.com/app/uploads/2019/08/lutz.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Bertha Lutz</h4>
+						<h5 class='text-light'>Lutou pelo sufrágio feminino </h5>
+						<p>Saiba mais sobre a história de <strong>Bertha Lutz</strong> clicando <a href="bertha.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://scontent.cdninstagram.com/vp/4ab1c27fd2fbab3e2efe09ea4a7d8ef0/5DEC6B91/t51.2885-15/e35/17076918_415195092207134_3454564808899166208_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Celina Guimarães</h4>
+						<h5 class='text-light'>A primeira eleitora do Brasil</h5>
+						<p>Saiba mais sobre a história de <strong>Celina Guimarães</strong> clicando <a href="celina.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="http://2.bp.blogspot.com/_deBNWpjP6v0/ShOFrrmmR8I/AAAAAAAAARw/hiI_fpwBcV8/s320/JBARBOSA.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Júlia Alves Barbosa Cavalcanti</h4>
+						<h5 class='text-light'>Segunda mulher no Brasil a tirar título de eleitor</h5>
+						<p>Saiba mais sobre a história de <strong>Júlia Cavalcanti</strong> clicando <a href="julia.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://2.bp.blogspot.com/-lmUBuzeCOLE/WqEzqopcqaI/AAAAAAAABiE/_s1Gw8nBL2EXtfhhqVzfvXQr5TFJTc2FQCEwYBhgL/s200/06-joana-cacilda-bessa.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Joana Cacilda de Bessa</h4>
+						<h5 class='text-light'>primeira eleitora de Pau dos Ferros e a primeira mulher no Brasil a ser eleita vereadora.</h5>
+						<p>Saiba mais sobre a história de <strong>Joana Cacilda de Bessa</strong> clicando <a href="joana.php">AQUI</a></p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="http://1.bp.blogspot.com/_Ua_ZKuBFZjY/TGVeHJIVU7I/AAAAAAAAAIs/JuMWCCh_WvA/s1600/Alzira+Soriano.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Alzira Teixeira</h4>
+						<h5 class='text-light'>A primeira prefeita do Brasil e da América Latina.</h5>
+						<p>Saiba mais sobre a história de <strong>Alzira Teixeira</strong> clicando <a href="alzira.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Carlota_Pereira_de_Queiroz_1920%27s.jpg/200px-Carlota_Pereira_de_Queiroz_1920%27s.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Carlota Pereira</h4>
+						<h5 class='text-light'>A primeira deputada federal da América Latina.</h5>
+						<p>Saiba mais sobre a história de <strong>Carlota Pereira</strong> clicando <a href="carlota.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://secureservercdn.net/166.62.112.219/889.9df.myftpupload.com/wp-content/uploads/posts/8500004_1489062873524_file.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Antonieta de Barros</h4>
+						<h5 class='text-light'>A primeira deputada estadual negra do país e primeira deputada mulher do estado de Santa Catarina.</h5>
+						<p>Saiba mais sobre a história de <strong>Antonieta de Barros</strong> clicando <a href="antonieta.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY9OJnVq2EayVbgMmAJecc1TTN7aoHNqMrTHnKiMUHTyZ-Jypt&s" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Maria do Céu Pereira Fernandes</h4>
+						<h5 class='text-light'>Primeira mulher a ocupar o cargo de deputada na Assembleia Legislativa do RN</h5>
+						<p>Saiba mais sobre a história de <strong>Maria do Céu Pereira Fernandes</strong> clicando <a href="mariaceu.php">AQUI</a></p>
+					</div>
+				</div>
+					<div class="carousel-item">
+					<img class="d-block w-100 imagem-cortada" src="https://upload.wikimedia.org/wikipedia/commons/5/54/Eunice_Michiles_em_2015.jpg" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block caption">
+						<h4 class='text-light'>Eunice Michiles</h4>
+						<h5 class='text-light'>A primeira Senadora</h5>
+						<p>Saiba mais sobre a história de <strong>Maria do Céu Pereira Fernandes</strong> clicando <a href="eunice.php">AQUI</a></p>
+					</div>
+				</div>
+    				<div class="carousel-item">
+    					<img class="d-block w-100 imagem-cortada" src="https://pbs.twimg.com/profile_images/765503930977619968/PYEURVoT.jpg" alt="Second slide">
+    					<div class="carousel-caption d-none d-md-block caption">
+    						<h4 class='text-light'>Wilma de Faria</h4>
+    						<h5 class='text-light'>Primeira governadora do estado do Rio Grande do Norte</h5>
+    						<p>Saiba mais sobre a história de <strong>Wilma de Faria</strong> clicando <a href="wilma.php">AQUI</a></p>
+    					</div>
+    				</div>
+        				<div class="carousel-item">
+        					<img class="d-block w-100 imagem-cortada" src="https://upload.wikimedia.org/wikipedia/commons/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg" alt="Second slide">
+        					<div class="carousel-caption d-none d-md-block caption">
+        						<h4 class='text-light'>Dilma Rousseff</h4>
+        						<h5 class='text-light'>Primeira Presidenta da República do Brasil</h5>
+        						<p>Saiba mais sobre a história de <strong>Dilma Rousseff</strong> clicando <a href="dilma.php">AQUI</a></p>
+        					</div>
+        				</div>
+            				<div class="carousel-item">
+            					<img class="d-block w-100 imagem-cortada" src="https://mossorohoje.com.br/uploads/materia/imagem1/11035/open-uri20181203-18070-18jlcx5" alt="Second slide">
+            					<div class="carousel-caption d-none d-md-block caption">
+            						<h4 class='text-light'>Rosalba Ciarlini</h4>
+            						<h5 class='text-light'>54ª Governadora do Rio Grande do Norte</h5>
+            						<p>Saiba mais sobre a história de <strong>Rosalba Ciarlini</strong> clicando <a href="rosalba.php">AQUI</a></p>
+            					</div>
+            				</div>
+                				<div class="carousel-item">
+            					<img class="d-block w-100 imagem-cortada" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Senadora_F%C3%A1tima_Bezerra_%28Foto_oficial%29.jpg" alt="Second slide">
+            					<div class="carousel-caption d-none d-md-block caption">
+            						<h4 class='text-light'>Fátima Bezerra</h4>
+            						<h5 class='text-light'>Atual Governadora do estado do Rio Grande do Norte, eleita em 2018.</h5>
+            						<p>Saiba mais sobre a história de <strong>Fátima Bezerra</strong> clicando <a href="fatima.php">AQUI</a></p>
+            					</div>
+            				</div>
+            					<div class="carousel-item">
+            					<img class="d-block w-100 imagem-cortada" src="https://jornalggn.com.br/sites/default/files/2019/09/o-que-a-morte-de-marielle-franco-tem-a-ver-com-as-ameacas-das-milicias-digitais-por-alvaro-miranda-marielle12.jpg" alt="Second slide">
+            					<div class="carousel-caption d-none d-md-block caption">
+            						<h4 class='text-light'>Marielle Franco</h4>
+            						<h5 class='text-light'>Inspiração feminista na política.</h5>
+            						<p>Saiba mais sobre a história de <strong>Marielle Franco</strong> clicando <a href="marielle.php">AQUI</a></p>
+            					</div>
+            				</div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -217,361 +344,16 @@
 			</a>
 		</div>
 	</section>
-	<section class="ftco-section ftco-no-pb">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/29-_Imperatriz_rainha_D._Leopoldina.jpg/245px-29-_Imperatriz_rainha_D._Leopoldina.jpg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Maria Leopoldina de Áustria</h3>
-							<span class="position mb-2">A PRIMEIRA MULHER A GOVERNAR O PAÍS</span>
-							<div class="text-justify">
-								
-		               			Saiba mais sobre a história de <strong>Maria Leopoldina</strong> clicando <a href="mleopoldina.php">AQUI</a> 
-	              			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b2/Maria_Quit%C3%A9ria_de_Jesus_Medeiros.jpg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Maria Quitéria</h3>
-							<span class="position mb-2">A PRIMEIRA  BRASILEIRA A INGRESSAR NA CARREIRA MILITAR NO BRASIL</span>
-							<div class="text-justify">
-							
-		              			</ul>
-		               			Saiba mais sobre a história de <strong>Maria Quitéria</strong> clicando <a href="mariaquiteria.php">AQUI</a> 
-	              			</div>
-						</div>
-					</div>
-				</div>	
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(https://lh3.googleusercontent.com/-ec7VeE6Q2p0/TY6EEtpqu5I/AAAAAAAAAOU/3hmzqruMz8w/s1600/nisia-floresta.jpg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3> Nísia Floresta Brasileira Augusta</h3>
-							<span class="position mb-2">A primeira educadora feminista do brasil</span>
-							<div class="text-justify">
-							
-		               			Saiba mais sobre a história de <strong>Nísia Floresta Brasileira Augusta</strong> clicando <a href="nisia.php">AQUI</a> 
-	            			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(https://i.pinimg.com/originals/e2/47/77/e2477770479554fedd77f62b23323a3e.jpg);"></div>
-							</div>
-						<div class="text pt-3 text-center">
-							<h3>Princesa Isabel</h3>
-							<span class="position mb-2"> A princesa regente do Brasil</span>
-							<div class="text-justify">			
-							
-		               			Saiba mais sobre a história de <strong>Princesa Isabel</strong> clicando <a href="princesaisabel.php">AQUI</a>  
-	              			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(http://3.bp.blogspot.com/-Qn7fXOpWjPs/Vqa3-uxKXNI/AAAAAAAAMb4/_OiT2ESMlU4/s1600/Daltro1.gif);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Leolinda Figueiredo Daltro</h3>
-							<span class="position mb-2">fundou o primeiro partido feminino em 1910.</span>
-							<div class="text-justify">
-							
-		               			Saiba mais sobre a história de <strong>Leolinda Figueiredo Daltro</strong> clicando <a href="leolinda.php">AQUI</a>  
-	              			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(http://mujeresconciencia.com/app/uploads/2019/08/lutz.jpg);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-							<h3>Bertha Lutz</h3>
-							<span class="position mb-2">lutou pelo sufrágio feminino no Brasil</span>
-							<div class="text-justify">
-							
-		            			Saiba mais sobre a história de <strong>Bertha Lutz</strong> clicando clicando <a href="bertha.php">AQUI</a> 
-	              			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-						<div class="img-wrap d-flex align-items-stretch">
-							<div class="img align-self-stretch" style="background-image: url(https://scontent.cdninstagram.com/vp/4ab1c27fd2fbab3e2efe09ea4a7d8ef0/5DEC6B91/t51.2885-15/e35/17076918_415195092207134_3454564808899166208_n.jpg?_nc_ht=scontent-frt3-1.cdninstagram.com);"></div>
-						</div>
-						<div class="text pt-3 text-center">
-						 	<h3>Celina Guimarães</h3>
-						 	<span class="position mb-2">a primeira eleitora do Brasil</span>
-							<div class="text-justify">		
-							
-		               			Saiba mais sobre a história de <strong>Celina Guimarães</strong> clicando clicando <a href="celina.php">AQUI</a> 
-	              			</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-3 ftco-animate">
-					<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(http://2.bp.blogspot.com/_deBNWpjP6v0/ShOFrrmmR8I/AAAAAAAAARw/hiI_fpwBcV8/s320/JBARBOSA.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Júlia Alves Barbosa Cavalcanti</h3>
-								<span class="position mb-2">segunda mulher no Brasil a tirar título de eleitor</span>
-									<div class="text-justify">
-									
-									
-		               Saiba mais sobre a história de <strong>Júlia Alves Barbosa Cavalcanti</strong> clicando <a href= "julia.php" >AQUI</a> 
-	              </div>
-	              
-	              
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+<br>
+<br>
+    
 		
-<!--outro bloco -->
-	<section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://2.bp.blogspot.com/-lmUBuzeCOLE/WqEzqopcqaI/AAAAAAAABiE/_s1Gw8nBL2EXtfhhqVzfvXQr5TFJTc2FQCEwYBhgL/s200/06-joana-cacilda-bessa.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Joana Cacilda de Bessa</h3>
-								<span class="position mb-2">primeira eleitora de Pau dos Ferros e a primeira mulher no Brasil a ser eleita vereadora.</span>	
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Joana Cacilda de Bessa</strong> clicando <a href="joana.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(http://s.glbimg.com/jo/g1/f/original/2010/11/01/alzira-2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Alzira Teixeira</h3>
-								<span class="position mb-2">a primeira prefeita do Brasil e da América Latina</span>
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Alzira Teixeira</strong> clicando <a href="alzira.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://peregrinacultural.files.wordpress.com/2009/07/1-carlota-de-queiroz32sp146.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-							    <h3>Carlota Pereira</h3>
-								<span class="position mb-2"> a primeira deputada federal da América Latina</span>
-								<div class="text-justify">
-									
-								
-		              	Saiba mais sobre a história de <strong>Carlota Pereira</strong> clicando clicando <a href="carlota.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(http://www.afreaka.com.br/wp-content/uploads/2015/01/Antonieta-de-Barros2.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Antonieta de Barros</h3>
-								<span class="position mb-2">a primeira deputada estadual negra do país</span>
-								<div class="text-justify">
-									
-								
-		             	Saiba mais sobre a história de <strong>Antonieta de Barros</strong> clicando clicando <a href="antonieta.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(http://www.cartapotiguar.com.br/wp-content/uploads/2015/03/07-maria-do-cc3a9u-fernandes-de-arac3bajo.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Maria do Céu Pereira Fernandes</h3>
-								<span class="position mb-2">primeira mulher a ocupar o cargo de deputada na Assembleia Legislativa do Rio Grande do Norte</span>
-								<div class="text-justify">
-									
-								
-		              	Saiba mais sobre a história de <strong>Maria do Céu </strong> clicando clicando <a href="mariaceu.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://acervo.oglobo.globo.com/incoming/18831720-33c-45d/imagemVerticalFotogaleria/Eunice-Michiles.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Eunice Michiles</h3>
-								<span class="position mb-2">a primeira senadora do Brasil</span>
-								<div class="text-justify">
-									
-									
-		              	Saiba mais sobre a história de <strong>Eunice Michiles</strong> clicando clicando <a href="eunice.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://blog.flaviomarinho.com.br/wp-content/uploads/2018/06/Wilma-de-Faria.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Wilma de Faria</h3>
-								<span class="position mb-2">primeira governadora do estado do Rio Grande do Norte</span>
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Wilma de Faria</strong> clicando <a href="wilma.php" >AQUI</a>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg/200px-Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Dilma Rousseff</h3>
-								<span class="position mb-2">primeira presidenta do Brasil</span>
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Dilma Rousseff</strong> clicando <a href="dilma.php">AQUI</a> 
-	              </div>
-	              
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- FALE CONOSCO -->
+    	</div>
+    </section>
+    
+    
 		
-
-<!--outro bloco -->
-		
-			<section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://pbs.twimg.com/profile_images/1562870424/Governadora_Twitter_001.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-								<h3>Rosalba Ciarlini</h3>
-								<span class="position mb-2">54ª Governadora do Rio Grande do Norte</span>
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Rosalba Ciarlini</strong> clicando <a href="rosalba.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://www.camara.leg.br/internet/deputado/bandep/74037.jpgmaior.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-							    <h3>Fátima Bezerra</h3>
-								<span class="position mb-2">atual governadora do estado do Rio Grande do Norte eleita em 2018</span>
-									<div class="text-justify">
-									
-			
-		               Saiba mais sobre a história de <strong>Fátima Bezerra</strong> clicando <a href="fatima.php">AQUI</a> 
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(https://abrilveja.files.wordpress.com/2019/03/marielle-franco-vereadora-assassinato-2018-5726.jpg.jpg);"></div>
-							</div>
-							<div class="text pt-3 text-center">
-							    <h3>Marielle Franco</h3>
-							    <span class="position mb-2"> inspiração feminista na política</span>
-								<div class="text-justify">
-									
-								
-		               Saiba mais sobre a história de <strong>Marielle Franco</strong> clicando <a href="marielle.php">AQUI</a> 
-	              </div>
-		</section>
-		<!-- <section >
-			<div id="carouselExampleIndicators" class="carousel slide w-50" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="https://www.altoastral.com.br/wp-content/uploads/2016/09/n%C3%ADsia-floresta-feminismo-brasil.jpg" alt="Nísia Floresta">
-						<div class="carousel-caption d-none d-md-block">
-    						<h5>Nísia Floresta</h5>
-    						<p>Descrição</p>
-  						</div>
-					</div>
-					<div class="carousel-item active">
-						<img class="d-block w-100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/29-_Imperatriz_rainha_D._Leopoldina.jpg/245px-29-_Imperatriz_rainha_D._Leopoldina.jpg" alt="Maria Leopoldina">
-						<div class="carousel-caption d-none d-md-block">
-    						<h5>MARIA LEOPOLDINA</h5>
-    						<p>A PRIMEIRA MULHER A GOVERNAR O PAÍS</p>
-  						</div>
-					</div>
-					
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</section> -->
-        
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -580,53 +362,26 @@
             	<h2 class="ftco-heading-2">Contato</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">	R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">R. Antônia de Lima Paiva, 155 - Nova Esperança, Parnamirim - RN, 59143-455</span></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">	infopolitizado@gmail.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="ftco-footer-widget mb-5">
-              <h2 class="ftco-heading-2">Recent Blog</h2>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-              <div class="block-21 mb-5 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about</a></h3>
-                  <div class="meta">
-                    <div><a href="#"><span class="icon-calendar"></span> Dec 25, 2018</a></div>
-                    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
-                    <div><a href="#"><span class="icon-chat"></span> 19</a></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
             <div class="ftco-footer-widget mb-5 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
+              <h2 class="ftco-heading-2">Atalhos</h2>
               <ul class="list-unstyled">
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
-                <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
+                <li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Voltar ao Inicio</a></li>
+                <li><a href="vargas.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Era Vargas</a></li>
+                <li><a href="temer.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Governo Michel Temer</a></li>
+                <li><a href="rousseff.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Governo Dilma Rousseff</a></li>
+                <li><a href="filme.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Filmes</a></li>
               </ul>
             </div>
           </div>
           <div class="col-md-6 col-lg-3">
-		  <div class="ftco-footer-widget mb-5">
+            <div class="ftco-footer-widget mb-5">
             	<h2 class="ftco-heading-2">Fale conosco!</h2>
               	<form action="mailto.php">
 				  	<div class="input-group mb-3">
@@ -659,9 +414,15 @@
         <div class="row">
           <div class="col-md-12 text-center">
 
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Desenvolvido por Jerlândia Basílio, Luana Taurino e Roberta Medeiros</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+    
           </div>
         </div>
       </div>
@@ -685,7 +446,7 @@
   <script src="../js/aos.js"></script>
   <script src="../js/jquery.animateNumber.min.js"></script>
   <script src="../js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"../></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="../js/google-map.js"></script>
   <script src="../js/main.js"></script>
     

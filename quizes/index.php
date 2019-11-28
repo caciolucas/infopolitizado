@@ -4,7 +4,7 @@
         echo 'console.log('. json_encode( $data ) .')';
         echo '</script>';
       }
-    require_once '../php/connect.php';
+    #require_once '../php/connect.php';
     session_start();
 
 

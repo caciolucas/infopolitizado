@@ -121,6 +121,7 @@
                       <a class="dropdown-item" href="musica.php">Músicas</a>
                     </div>
                 </li>
+                <li class="nav-item"><a href="quemsomos.php" class="nav-link">QUEM SOMOS?</a></li>
 	  
 	  
 	        	<li class="nav-item"><a href="quizes.php" class="nav-link">QUIZ</a></li>

@@ -14,6 +14,8 @@
     $quizes= $conn->query($sql);
     
     $quizes2= $conn->query($sql);
+
+    $quizes3= $conn->query($sql);
     
     $sql2= "SELECT * from categorias";
     $categorias= $conn->query($sql2);
@@ -71,7 +73,7 @@
         <script>
             var quizes = {}
             <?php while($linha = $quizes->fetch_assoc()):?>
-                quizes['<?php echo $linha['quizID']?>']={'titulo':"<?php echo $linha['titulo']?>",'categoria':<?php echo $linha['categoria']?>,'dificuldade':<?php echo $linha['dificuldade']?>,'expira':"<?php echo $linha['expira']?>" };
+                quizes['<?php echo $linha['quizID']?>']={'titulo':"<?php echo $linha['titulo']?>",'categoria':<?php echo $linha['categoria']?>,'dificuldade':<?php echo $linha['dificuldade']?>,'expira':"<?php echo $linha['expira']?>",'link':"<?php echo $linha['linkrelacionado']?>",'quizrelacionado':"<?php echo $linha['quizrelacionado']?>" };
             <?php endwhile; ?>
             function change() {
                 var select = document.getElementById('select').value
@@ -85,6 +87,10 @@
                 document.getElementById('dificuldadeQuiz').value = quizes[select]['dificuldade'];
 
                 document.getElementById('expiraQuiz').value = quizes[select]['expira'];
+
+                document.getElementById('link').value = quizes[select]['link'];
+
+                document.getElementById('quizrelacionado').value = quizes[select]['quizrelacionado'];
             }
         </script>
     </head>
@@ -119,7 +125,7 @@
         </nav>
         <?php if($sucesso):?>
         <div class='alert alert-info  m-0' role='alert'>
-            Quiz editado com sucesso! 
+            Quiz editado com sucesso! Por favor atualize a pagina para atualizar na lista!
         </div>
         <?php elseif ($erro):?>
         <div class='alert alert-danger  m-0' role='alert'>
@@ -147,10 +153,6 @@
                 <?php endwhile;?>
             </select>
                 
-            <!-- <?php #if($selecionou):?>
-                <?php #console_log($selecionou)?>
-                <script type="text/javascript">change();</script>
-            <?php #endif;?> -->
         </div>
         <hr>
         <form method=POST action="">
@@ -191,9 +193,32 @@
                 </div>
                 <input type="date" id='expiraQuiz' value="" name="expiracao" class="form-control">
             </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend" style='text-align:center'>
+                    <span class="input-group-text" style='width:94px;text-align:center'  id="basic-addon1">Link</span>
+                </div>
+                <input placeholder='Link relacionado ao assunto' id='link' value="" name="link" class="form-control">
+            </div>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style='width:94px;text-align:center'  id="basic-addon1">Relacionado</span>
+                </div>
+                <select name='quizrelacionado' id='quizrelacionado' class='custom-select'>
+                        <option value="" hidden> Escolha uma quiz </option>
+                        <?php while($linha = $quizes3->fetch_assoc()):?>
+                            <?php console_log($linha)?>
+                            <option value="<?php echo $linha['quizID'] ?>"><?php echo $linha['titulo']?></option>')
+                        <?php endwhile;?>
+                </select>
+            </div>
         
             </center>
             <center><button type="submit" class="btn btn-primary" name="editarquiz">Salvar Quiz</button></center>
             <center><a class="btn btn-success m-1" href='../quizes'>Voltar</a></center>
         </form>
+
+        <?php if(isset($selecionou)):?>
+            <script type="text/javascript">change();</script>
+        <?php endif;?>
     </div> 

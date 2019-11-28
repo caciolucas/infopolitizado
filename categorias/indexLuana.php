@@ -4,7 +4,7 @@
         echo 'console.log('. json_encode( $data ) .')';
         echo '</script>';
       }
-    #require_once '..\php\connect.php';
+    require_once '..\php\connect.php';
     session_start();
 
 
@@ -88,5 +88,5 @@
         </div>
     </div>
     <center><a class="btn btn-success m-1" href='..\userpage.php'>Voltar</a></center>
-    <?php endif ?>  
-    </body>
+    <?php endif ?>
+</body>

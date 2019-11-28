@@ -1,15 +1,16 @@
 <?php
-require_once '../php/connect.php';
-session_start();
 function console_log( $data ){
     echo '<script>';
     echo 'console.log('. json_encode( $data ) .')';
     echo '</script>';
   }
 
-// if (isset($_POST['novapergunta '])){
+    require_once '../php/connect.php';
+    session_start();
+
+ if (isset($_POST['novapergunta '])){
     
-// }   
+ }   
 console_log($_POST);
 if (isset($_POST['novoquiz'])||isset($_POST['perguntajaadicionada'])) {
     
@@ -37,7 +38,8 @@ if (isset($_POST['novoquiz'])||isset($_POST['perguntajaadicionada'])) {
                 </div>";
         
             }else{
-                $sql= "INSERT INTO quizes (titulo, categoria, dificuldade, criador,expira,linkrelacionado,quizrelacionado) VALUES ('$nomeQuiz','$categoriaQuiz','$dificuldade','$criador','$expiracao','$link_relacionado','$quiz_relacionado')";
+                #$sql= "INSERT INTO quizes (titulo, categoria, dificuldade, criador, expira, linkrelacionado,quizrelacionado) VALUES ('$nomeQuiz','$categoriaQuiz','$dificuldade','$criador','$expiracao','$link_relacionado','$quiz_relacionado')";
+                $sql= "INSERT INTO quizes (titulo, categoria, dificuldade, criador, expira, linkrelacionado,quizrelacionado) VALUES ('$nomeQuiz', $categoriaQuiz, $dificuldade, $criador,'$expiracao','$link_relacionado',$quiz_relacionado)";
                 $res= mysqli_query($conn, $sql);
                 
                 if($res){
@@ -45,10 +47,11 @@ if (isset($_POST['novoquiz'])||isset($_POST['perguntajaadicionada'])) {
                 Quiz criado com sucesso, adicione as perguntas! 
                 </div>";
                 }else{
-                echo"<div class='alert alert-danger  m-0' role='alert'>
-                Erro ao cadastrar quiz!
-                </div>
-                ";
+                #echo"<div class='alert alert-danger  m-0' role='alert'>
+                #Erro ao cadastrar quiz!
+                #</div>
+                #";
+                echo "<div class='alert alert-danger  m-0' role='alert'>".$sql."</div>";
                 }
             }
 

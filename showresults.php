@@ -1,33 +1,45 @@
 <?php 
+    require_once 'php/connect.php';
+    session_start();
     function console_log( $data ){
         echo '<script>';
         echo 'console.log('. json_encode( $data ) .')';
         echo '</script>';
-      }
-    require_once 'php/connect.php';
-    session_start();
+      };
+    $id=$_POST['quizid'];
+    $sql_quiz="SELECT * FROM quizes WHERE quizID=$id";
+    $quiz=($conn->query($sql_quiz))->fetch_assoc();
+    console_log($quiz);
+    $id_relacionado=$quiz['quizrelacionado'];
+    $quiz_relacionado=($conn->query("SELECT titulo FROM quizes WHERE quizID=$id_relacionado"))->fetch_assoc();
     
-    if (!isset($_SESSION['logado']) || $_SESSION['logado']==false) {
-        echo '<script>window.location.replace("index.php");</script>';   
-    }  
-    $id=$_POST['id'];
-    $sql= "SELECT * FROM quizes WHERE quizID=$id";
-    $quiz= ($conn->query($sql))->fetch_assoc();
-    
-    $sql2="SELECT perguntaID, enunciado, alternativaA,alternativaB,alternativaC,alternativaD from perguntas left join respostas on pergunta = perguntaID where perguntas.quiz=$id";
-    console_log($sql2);
-    $results= ($conn->query($sql2));
-    $perguntas_e_respostas=[];
-    $i=0;
-    while ($linha=$results->fetch_assoc()) {
-        console_log($linha);
-        $i++;
-        $perguntas_e_respostas[$i]=$linha;
-    }
-    $perguntas_e_respostas= array_reverse($perguntas_e_respostas);
-    console_log($perguntas_e_respostas);
-    
+    $sql="SELECT * FROM recordes WHERE usuarioID=".$_SESSION['id']." and quizID=".$id;
+    $recorde=($conn->query($sql));
+    $recorde2=($conn->query($sql));
+    $erro=0;
+    if (!count($recorde->fetch_all())){
+        $sql_insert="INSERT INTO recordes (recordes,quizID,usuarioID) values (".$_POST['acertos'].",$id,".$_SESSION['id'].")";
+        $res= mysqli_query($conn, $sql_insert); 
+            if($res){
+                $novo=1;
+            }else{
+                $erro=1;
+            }
+    }else {
+        $recorde_atual=$recorde2->fetch_assoc();
+        if ($recorde_atual['recordes']<=$_POST['acertos']) {
+            $sql_update="UPDATE recordes set recordes=".$_POST['acertos']." WHERE quizID=$id and usuarioID=".$_SESSION['id'];
+            $res= mysqli_query($conn, $sql_update); 
+            if($res){
+                $novo=1;
+            }else{
+                $erro=1;
+            }
+        }else{
+            $erro=0;
+        }
 
+    }
 
 ?>
 <html lang="pt-br">
@@ -35,7 +47,8 @@
     <title>INFOPOLIZADO</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="stylesheet" href='scss\circle.scss'>
+    <link rel="stylesheet" href='css\circle.css'>
     <link rel="stylesheet" href='style.css'>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -50,8 +63,14 @@
     <link rel="stylesheet" href="main.css">
     <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
     <style>
+        .main{
+            margin:auto;
+            margin-top:20px;
+            width:500px
+        }
         body{
-            background-image: url('question_bg.jpg');
+            background-image: url('books_bg.jpg');
+            background-size: 400px;
             background-repeat: repeat;
         }
     </style>
@@ -59,7 +78,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" style="font-family:'Work Sans';font-weight:800" href="index.php">INFOPOLITIZADO!</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegaÃ§Ã£o">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegaÃƒÂ§ÃƒÂ£o">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
@@ -85,46 +104,30 @@
             </ul>
         </div>
     </nav>
-    <?php if(isset($_POST['erro'])):?>
-        <div class='alert alert-danger  m-0' role='alert'>
-            Responda todas as perguntas!
+    <?php if (isset($novo)):?>
+        <div class='alert alert-primary m-0' role='alert'>
+            Novo recorde atingido, parabéns!
+        </div>
+    <?php elseif ($erro):?>
+        <div class='alert alert-danger m-0' role='alert'>
+            Tivemos um problema com o banco de dados, por favor, contate um administrador
         </div>
     <?php endif;?>
-
-    <h1><?php echo $quiz['titulo']?></h1>
-    <div class='main p-4' style='background:rgba(255,255,255,0.8);width:50vw;margin:auto'>
-        <form method='POST' action='checkanswers.php'>
-            <input type='hidden' name='id' value='<?php echo $id?>'>
-        <?php foreach ($perguntas_e_respostas as $i => $pergunta):?>
-        <h2>Pergunta <?php echo ($i+1)?></h2>
-        <p><?php echo $pergunta['enunciado'] ?></p>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio<?php echo $i?>.1" name="<?php echo $pergunta['perguntaID']?>" value='a' class="custom-control-input"> 
-                <label class="custom-control-label" for="customRadio<?php echo $i?>.1">
-                    <?php echo $pergunta['alternativaA']?>
-                </label>
+    <div class='main p-4' style='background:rgba(255,255,255,0.8)'>
+        <h3 >Você acertou <?php echo $_POST['acertos']?> questão(ões)!</h3>
+        <h4 style='text-align:center'>Aprenda mais sobre esse tema <a Target="_blank"  href='<?php echo $quiz['linkrelacionado']?>'>aqui! </a> 
+        <h4 style='text-align:center'>Responda também o quiz <strong><?php echo $quiz_relacionado['titulo']?></strong></h4>
+        <div style='width:240px;margin:auto;'>
+            <div class="c100 p<?php echo(round(100*$_POST['porcentagem']));?> big">
+                <span><?php echo(round(100*$_POST['porcentagem']));?>%</span>
+                <div class="slice">
+                    <div class="bar"></div>
+                    <div class="fill"></div>
+                </div>
             </div>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio<?php echo $i?>.2" name="<?php echo $pergunta['perguntaID']?>" value='b' class="custom-control-input">
-                <label class="custom-control-label" for="customRadio<?php echo $i?>.2">
-                    <?php echo $pergunta['alternativaB']?>
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio<?php echo $i?>.3" name="<?php echo $pergunta['perguntaID']?>" value='c' class="custom-control-input">
-                <label class="custom-control-label" for="customRadio<?php echo $i?>.3">
-                    <?php echo $pergunta['alternativaC']?>
-                </label>
-            </div>
-            <div class="custom-control custom-radio">
-                <input type="radio" id="customRadio<?php echo $i?>.4" name="<?php echo $pergunta['perguntaID']?>" value='d' class="custom-control-input">
-                <label class="custom-control-label" for="customRadio<?php echo $i?>.4">
-                    <?php echo $pergunta['alternativaD']?>
-                </label>
-            </div>
-        <?php endforeach;?>
-            <input style='margin:auto;display:flex' class='btn btn-dark' type='submit' value='Enviar respostas' name='enviado'>
-        </form>
+            <center><a class='btn btn-primary' href='quizes.php'>Responder mais quizes</a></center>
+        </div>
+        
     </div>
+    
 </body>
-</html>

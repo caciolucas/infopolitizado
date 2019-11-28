@@ -127,7 +127,7 @@
                     <span class="input-group-text" style='width:150 px;text-align:center'  id="basic-addon1">Quiz relacionado</span>
                 </div>
                 <select name='quiz_relacionado' class='custom-select'>
-                    <option value="" hidden> Escolha um quiz como sugestão </option>
+                    <option value="NULL" hidden> Escolha um quiz como sugestão </option>
                     <?php
                     while($linha = $quizes->fetch_assoc()) {
                         echo ('<option value="'.$linha['quizID'].'">'.$linha['titulo'].'</option>');}
