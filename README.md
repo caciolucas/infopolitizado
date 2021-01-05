@@ -1,3 +1,3 @@
 # INFOPOLITIZADO
 
-Esse sistema foi desenvolvido para servir como TCC da aluno Luana Taurino
+Esse sistema foi desenvolvido para servir como TCC da aluna Luana Taurino
